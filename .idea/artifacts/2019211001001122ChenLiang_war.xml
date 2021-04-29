@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="2019211001001122ChenLiang:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>2019211001001122ChenLiang</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ChenLiang2019211001001122-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="2019211001001122ChenLiang:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </context-param><context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:sqlserver://localhost:1433;databaseName=userdb</param-value>
+</context-param><context-param>
+    <param-name>username</param-name>
+    <param-value>CL</param-value>
+</context-param><context-param>
+    <param-name>password</param-name>
+    <param-value>123456</param-value>
+</context-param>
+<!--    <servlet>-->
+<!--        <servlet-name>CL</servlet-name>-->
+<!--        <servlet-class>com.ChenLiang.week2</servlet-class>-->
+
+<!--    </servlet>-->
+
+
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>CL</servlet-name>-->
+<!--        <url-pattern>/hello-servlet</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <servlet>
+    <servlet-name>LifeCycleServlet</servlet-name>
+    <servlet-class>com.ChenLiang.week3.LifeCycleServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <url-pattern>/Life</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.ChenLiang.week3.RegisterServlet</servlet-class>
+</servlet>
+
+    <!-- <servlet>
+         <servlet-name>JDBCDemoServlet</servlet-name>
+         <servlet-class>com.ChenLiang.week4.JDBCDemoServlet</servlet-class>
+         <init-param>
+             <param-name>driver</param-name>
+             <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+         </init-param>
+         <init-param>
+             <param-name>url</param-name>
+             <param-value>jdbc:sqlserver://localhost:databaseName=userdb</param-value>
+         </init-param>
+         <init-param>
+             <param-name>username</param-name>
+             <param-value>CL</param-value>
+         </init-param>
+         <init-param>
+             <param-name>password</param-name>
+             <param-value>123456</param-value>
+         </init-param>
+         <load-on-startup>1</load-on-startup>
+     </servlet>
+     <servlet-mapping>
+         <servlet-name>JDBCDemoServlet</servlet-name>
+         <url-pattern>/jdbc</url-pattern>
+     </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register1</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
+</web-app>
