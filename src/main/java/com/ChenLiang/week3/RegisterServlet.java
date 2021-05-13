@@ -1,3 +1,4 @@
+/*
 package com.ChenLiang.week3;
 
 import javax.servlet.*;
@@ -46,7 +47,8 @@ public class RegisterServlet extends HttpServlet {
         //for example change password of db = change in java code
 
         //get servletconfig --> getInitParameters --no change
-        /*String driver=getInitParameter("driver");
+        */
+/*String driver=getInitParameter("driver");
         String url=getInitParameter("url");
         String username=getInitParameter("username");
         String password=getInitParameter("password");
@@ -58,7 +60,8 @@ public class RegisterServlet extends HttpServlet {
             System.out.println("init()-->"+con); //ok(use java code) -ok (use config in web.xml) -ok --use(@webservlet)
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
-        }*/
+        }*//*
+
 
     }
     @Override
@@ -126,3 +129,4 @@ public class RegisterServlet extends HttpServlet {
         }
     }
 }
+*/
