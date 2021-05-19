@@ -1,3 +1,4 @@
+/*
 package com.ChenLiang.week4;
 
 import javax.servlet.ServletException;
@@ -49,7 +50,8 @@ public class RegisterServlet extends HttpServlet {
         //for example change password of db = change in java code
 
         //get servletconfig --> getInitParameters --no change
-        /*String driver=getInitParameter("driver");
+        */
+/*String driver=getInitParameter("driver");
         String url=getInitParameter("url");
         String username=getInitParameter("username");
         String password=getInitParameter("password");
@@ -61,7 +63,8 @@ public class RegisterServlet extends HttpServlet {
             System.out.println("init()-->"+con); //ok(use java code) -ok (use config in web.xml) -ok --use(@webservlet)
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
-        }*/
+        }*//*
+
 
     }
     @Override
@@ -97,6 +100,7 @@ public class RegisterServlet extends HttpServlet {
             throwables.printStackTrace();
         }
         response.sendRedirect("./login.jsp");
+*/
 /*
         String sql_1="select * from [user]";
         writer.print("<jsp:include page=\"header.jsp\">");
@@ -132,7 +136,8 @@ public class RegisterServlet extends HttpServlet {
             throwables.printStackTrace();
         }
         writer.print("</table>");
-        writer.print("</html>");*/
+        writer.print("</html>");*//*
+
 
         //print - write into response
     }
@@ -146,3 +151,4 @@ public class RegisterServlet extends HttpServlet {
         }
     }
 }
+*/
