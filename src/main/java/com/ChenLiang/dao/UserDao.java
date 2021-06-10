@@ -73,7 +73,7 @@ public class UserDao implements IUserDao{
 
     @Override
     public User findById(Connection con, Integer id) throws SQLException {
-        String sql = "select * from user where id =?";
+        String sql = "select * from [user] where id =?";
         PreparedStatement st = con.prepareStatement(sql);
         st.setInt(1, id);
         ResultSet rs = st.executeQuery();
@@ -125,7 +125,7 @@ public class UserDao implements IUserDao{
     @Override
     public List<User> findByUsername(Connection con, String username) throws SQLException {
         List<User> UserList = new ArrayList<User>();
-        String sql="select * from user where username=?";
+        String sql="select * from [user] where username=?";
         PreparedStatement st=con.prepareStatement(sql);
         st.setString(1,username);
         ResultSet rs=st.executeQuery();
