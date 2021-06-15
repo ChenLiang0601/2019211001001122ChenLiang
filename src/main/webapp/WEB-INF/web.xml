@@ -71,6 +71,16 @@
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register1</url-pattern>
     </servlet-mapping>
+    <filter>
+        <filter-name>a</filter-name>
+        <filter-class>com.ChenLiang.lab2.ChenLiangFilter</filter-class>
+
+
+    </filter>
+    <filter-mapping>
+        <filter-name>a</filter-name>
+        <url-pattern>/lab2/welcome.jsp</url-pattern>
+    </filter-mapping>
     <welcome-file-list>
         <welcome-file>home</welcome-file>
     </welcome-file-list>
